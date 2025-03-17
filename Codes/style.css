@@ -1,0 +1,122 @@
+:root {
+    --scrolled-px: 0;
+    --title-width: 50%;
+    --title-margin: 50%;
+    --absolute-relative: absolute;
+    --li-padding-left: 0;
+    --ul-top-margin: 0;
+    --serif: "Tiempos Headline", "Times New Roman", ui-serif;
+    --sans: "Geist" , "Inter" , "SF Pro" , "Roboto" , "Arial" , ui-sans-serif;
+    --head: "Neutral Face" , "Inter Display" , "SF Pro" , "Roboto" , "Arial" , ui-sans-serif;
+    --blacky: #000000;
+    --whitey: #ffffff;
+    --greyText: #717171;
+}
+
+
+
+
+.hero {
+    z-index: -100;
+    background-color: var(--whitey);
+
+    ul {
+        position: fixed;
+        font-family: var(--sans), serif;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 30px;
+        }
+    }
+    svg {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 70px;
+        max-height: 70vh;
+        padding: 10px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(calc(var(--scrolled-px) * 1.1));
+         
+    }
+}
+.about {
+    .aboutGif {
+        position: var(--absolute-relative);
+        img {
+            height: 25em;
+            width: 25em;
+            opacity: 0;
+        }
+    }
+    .aboutText {
+        margin: 20px var(--title-margin) 0;
+    }
+
+
+    #abt10 {
+        font-family: var(--sans);
+        font-size: 2em;
+        margin-top: 1em;
+        color: var(--greyText);
+        font-weight: 100;
+        padding-bottom: 200px;
+        display: block;
+    }
+}
+.achievements {
+    color: var(--whitey);
+
+    .achievementText {
+        margin-left: 10px;
+    }
+    .achievementList {
+        position: var(--absolute-relative);
+        font-size: 2em;
+        font-weight: 100;
+        color: var(--greyText);
+    }
+}
+button {
+    border: none;
+    font-family: var(--sans), serif;
+    color: var(--blacky);
+    background-color: transparent;
+}
+
+/* .journal {
+
+    .journalText {
+            color: var(--greyText);
+            padding-right: 20px;
+    }
+    #journalName {
+        #jnt1, #jnt2, #jnt3 {
+            color: var(--whitey);
+            font-size: 1em;
+            margin: 0;
+        }
+        #jnt2 {
+            color: #ec2525;
+        }
+    }
+    .journalList {
+        position: var(--absolute-relative);
+        font-family: var(--sans), serif;
+        font-size: 2em;
+        color: var(--whitey);
+    }
+} */
+
+@media screen and (max-width: 900px) {
+    :root {
+        --title-width: 100%;
+        --title-margin: 10px;
+        --absolute-relative: relative;
+        --li-padding-left: 20px;
+        --ul-top-margin: 1em;
+    }
+}
