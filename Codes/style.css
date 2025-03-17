@@ -5,16 +5,24 @@
     --absolute-relative: absolute;
     --li-padding-left: 0;
     --ul-top-margin: 0;
-    --serif: "Tiempos Headline", "Times New Roman", ui-serif;
     --sans: "Geist" , "Inter" , "SF Pro" , "Roboto" , "Arial" , ui-sans-serif;
-    --head: "Neutral Face" , "Inter Display" , "SF Pro" , "Roboto" , "Arial" , ui-sans-serif;
+    --head: "NeutralFace" , "Inter Display" , "SF Pro" , "Roboto" , "Arial" , ui-sans-serif;
     --blacky: #000000;
     --whitey: #ffffff;
     --greyText: #717171;
 }
 
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../Fonts/NeutralFaceRegular.woff2') format('woff2'),
+         url('../Fonts/NeutralFaceRegular.woff') format('woff');
+}
 
-
+@font-face {
+    font-family: 'Geist';
+    src: url('../Fonts/GeistVF.woff2') format('woff2'),
+         url('../Fonts/GeistVF.woff') format('woff');
+}
 
 .hero {
     z-index: -100;
