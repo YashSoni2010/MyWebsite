@@ -1,9 +1,18 @@
 
 //SCROLL TO FUNCTION-------------------------------------\\
 function scrollToTarget(targetId) {
-    const targetElement = document.getElementById(targetId);
-    lenis.scrollTo(targetElement);
+  // Find the element with the specified ID.
+  const element = document.getElementById(targetId);
+
+  // Check if the element exists in the document.
+  if (element) {
+    // Use scrollIntoView with smooth scrolling.
+    element.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.error(`Element with ID "${targetId}" not found.`);
+  }
 }
+
 //-------------------------------------------------------\\
 
 // THIS IS THE ELEMENT TRACKER---------------------------\\
